@@ -1,3 +1,5 @@
+[![CI](https://github.com/operator13/data_validation_automation_framework/actions/workflows/ci.yml/badge.svg)](https://github.com/operator13/data_validation_automation_framework/actions/workflows/ci.yml)
+
 # Data Validation Automation Framework
 
 A robust, scriptable, and extensible Python framework for validating data across enterprise data warehouse migrations (e.g., from on-prem SQL Server to Azure/Snowflake).
@@ -11,19 +13,32 @@ A robust, scriptable, and extensible Python framework for validating data across
 - Extensible to new data sources (S3, BigQuery, etc.)
 - Placeholder for dbt integration
 
-## Quick Start
-1. Install dependencies: `pip install -r requirements.txt`
-2. Configure your validation in `config/`
-3. Run validations: `python cli.py --config config/sample_config.yaml`
+## Getting Started
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/operator13/data_validation_automation_framework.git
+   cd data_validation_automation_framework
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Configure your validation:**
+   Edit `config/sample_config.yaml` with your connection details and validation rules.
+4. **Run validations:**
+   ```bash
+   python cli.py --config config/sample_config.yaml
+   ```
+5. **View the report:**
+   Open the generated HTML report at the path specified in your config.
 
-## Directory Structure
-- `connectors/` - Source connectors (SQL Server, Snowflake, Azure, etc.)
-- `validation/` - Validation logic (row/aggregate level)
-- `config/` - Config files for mapping and rules
-- `reporting/` - Reporting modules (HTML, Excel, PDF)
-- `tests/` - Pytest-based test suite
-- `cli.py` - Command-line entry point
-- `hooks/` - Integration hooks (dbt, ADF, etc.)
+## Usage Example
+```bash
+python cli.py --config config/sample_config.yaml
+```
+
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 MIT 
