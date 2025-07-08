@@ -1,4 +1,8 @@
 [![CI](https://github.com/operator13/data_validation_automation_framework/actions/workflows/ci.yml/badge.svg)](https://github.com/operator13/data_validation_automation_framework/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Python](https://img.shields.io/badge/python-3.10-blue.svg)
+[![Last Commit](https://img.shields.io/github/last-commit/operator13/data_validation_automation_framework.svg)](https://github.com/operator13/data_validation_automation_framework/commits/main)
+[![Issues](https://img.shields.io/github/issues/operator13/data_validation_automation_framework.svg)](https://github.com/operator13/data_validation_automation_framework/issues)
 
 # Data Validation Automation Framework
 
