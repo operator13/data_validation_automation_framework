@@ -1,0 +1,9 @@
+pandas
+sqlalchemy
+pyodbc
+snowflake-connector-python
+azure-storage-blob
+pytest
+openpyxl
+jinja2
+PyYAML 

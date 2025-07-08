@@ -1,0 +1,23 @@
+# Sample config for data validation
+sources:
+  sql_server:
+    connection_string: 'mssql+pyodbc://user:password@server/db?driver=ODBC+Driver+17+for+SQL+Server'
+    table: 'dbo.SourceTable'
+    key_columns: ['id']
+    columns: ['id', 'name', 'amount']
+  snowflake:
+    user: 'user'
+    password: 'password'
+    account: 'account.region.cloud'
+    warehouse: 'WAREHOUSE'
+    database: 'DB'
+    schema: 'SCHEMA'
+    table: 'TargetTable'
+    key_columns: ['id']
+    columns: ['id', 'name', 'amount']
+validation:
+  type: 'row_level'  # or 'aggregate_level'
+  compare_columns: ['name', 'amount']
+report:
+  output: 'output/report.html'
+  format: 'html'  # or 'excel', 'pdf' 
