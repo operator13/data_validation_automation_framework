@@ -7,3 +7,5 @@ pytest
 openpyxl
 jinja2
 PyYAML 
+pytest-cov
+codecov 
